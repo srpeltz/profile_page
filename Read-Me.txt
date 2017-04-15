@@ -1,0 +1,17 @@
+* documentation folder :
+	To view all the documentation go to documentation folder and open index.html in your browser.
+
+* html folder:
+	It contains all the html files and releted folders.
+	
+-----------------------
+
+* Installation:
+	Upload files from a folder 'html' to web server or local server to test.
+
+* Dependencies:
+	Contact form not work on local server. It only work when you host at live server.
+	
+	
+Note : The images used in the template are not included in the main download file, they are only for the preview purpose.
+
