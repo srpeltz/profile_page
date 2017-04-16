@@ -6,14 +6,14 @@
 * ---------------------------------------------------------------------------------------- */
 (function ($) {
     "use strict";
-	
-	var $window = $(window); 
-	
+
+	var $window = $(window);
+
 	/* Preloader Effect */
 	$window.load(function() {
 	    $(".preloader").fadeOut(500);
     });
-	
+
 	/* Parallax Effect */
 	var $parallax=$('.parallax');
 	if ($parallax.length){
@@ -35,11 +35,11 @@
 	/* Typed subtitle */
 	$('.typed-title').typed({
 		stringsElement: $('.typing-title'),
-		backDelay: 2000,
+		backDelay: 10000,
 		typeSpeed: 0,
 		loop: true
 	});
-	
+
 	/* Animated skills Bars */
 	$('#about').waypoint(function() {
 		$('.skillbar').each(function() {
@@ -50,10 +50,10 @@
 	},{
 		offset: '35%'
 	});
-	
+
 	/* Init Counter */
     $('.counter').counterUp({ delay: 4, time: 1000 });
-	
+
     /*OwlCarousels testimonial Start*/
 	$('#testimonial-carousel').owlCarousel({
 		loop: true,
@@ -61,7 +61,7 @@
 		margin: 10,
 		responsiveClass: true,
 	});
-	
+
 	/* Sticky header */
 	$window.scroll(function(){
     	if ($window.scrollTop() > 200) {
@@ -70,7 +70,7 @@
 			$('.navbar').removeClass('sticky-header');
 		}
 	});
-	
+
 	/*Portfolio (filtering) */
 	/* Init Isotope */
 	var $portfolio = $(".portfolio-boxes").isotope({
@@ -85,18 +85,18 @@
 
 	/* Filter items on click */
 	var $portfolionav=$(".portfolio-nav li a");
-		$portfolionav.on('click', function (e) { 
-	
+		$portfolionav.on('click', function (e) {
+
 		var filterValue = $(this).attr('data-filter');
 		$portfolio.isotope({
 			filter: filterValue
-		}); 
-		
-		$portfolionav.removeClass("active-portfolio"); 
+		});
+
+		$portfolionav.removeClass("active-portfolio");
 		$(this).addClass("active-portfolio");
 		e.preventDefault();
-	}); 
-	
+	});
+
 	/* Portfolio magnific popup */
 	$('.has-popup').magnificPopup({
 		type: 'inline',
@@ -104,7 +104,7 @@
 		closeBtnInside: true,
 		mainClass: 'mfp-fade'
 	});
-  
+
 	/* Load google map */
 	google.maps.event.addDomListener(window, 'load', initMap);
 	var map;
@@ -116,7 +116,7 @@
 			styles: [{"elementType":"geometry","stylers":[{"color":"#f5f5f5"}]},{"elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"elementType":"labels.text.fill","stylers":[{"color":"#616161"}]},{"elementType":"labels.text.stroke","stylers":[{"color":"#f5f5f5"}]},{"featureType":"administrative.land_parcel","elementType":"labels.text.fill","stylers":[{"color":"#bdbdbd"}]},{"featureType":"poi","elementType":"geometry","stylers":[{"color":"#eeeeee"}]},{"featureType":"poi","elementType":"labels.text.fill","stylers":[{"color":"#757575"}]},{"featureType":"poi.park","elementType":"geometry","stylers":[{"color":"#e5e5e5"}]},{"featureType":"poi.park","elementType":"labels.text.fill","stylers":[{"color":"#9e9e9e"}]},{"featureType":"road","elementType":"geometry","stylers":[{"color":"#ffffff"}]},{"featureType":"road.arterial","elementType":"labels.text.fill","stylers":[{"color":"#757575"}]},{"featureType":"road.highway","elementType":"geometry","stylers":[{"color":"#dadada"}]},{"featureType":"road.highway","elementType":"labels.text.fill","stylers":[{"color":"#616161"}]},{"featureType":"road.local","elementType":"labels.text.fill","stylers":[{"color":"#9e9e9e"}]},{"featureType":"transit.line","elementType":"geometry","stylers":[{"color":"#e5e5e5"}]},{"featureType":"transit.station","elementType":"geometry","stylers":[{"color":"#eeeeee"}]},{"featureType":"water","elementType":"geometry","stylers":[{"color":"#c9c9c9"}]},{"featureType":"water","elementType":"labels.text.fill","stylers":[{"color":"#9e9e9e"}]}],
 		});
 	}
-	
+
 	/* Contact form validation */
 	var $contactform=$("#contactForm");
 	$contactform.validator({focus: false}).on("submit", function (event) {
