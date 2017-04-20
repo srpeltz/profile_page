@@ -25,7 +25,7 @@
 
 
 	$EmailTo = "srpeltzer@yahoo.com"; // Replace with your email.
-	$Subject = "New Message Received";
+	$Subject = "New Message Received From Contact Form";
 
 	// prepare email body text
 	$Body = "";
