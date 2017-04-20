@@ -972,6 +972,8 @@ a:focus{
 
 .contact{
 	background: #f1f1f1;
+	margin: 0 auto;
+	text-align: center;
 }
 
 .contact .container-fluid{
@@ -984,6 +986,7 @@ a:focus{
 
 .row.no-gutters > [class*='col-'] {
 	padding: 0;
+
 }
 
 .google-map{
