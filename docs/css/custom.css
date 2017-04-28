@@ -1054,6 +1054,11 @@ fieldset[disabled] .btn{
 	color: #fff;
 }
 
+#phone a {
+	text-decoration: none;
+	color: #fff;
+}
+
 /************************************/
 /*****    12. Footer area css   *****/
 /************************************/
