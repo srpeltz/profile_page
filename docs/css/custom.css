@@ -749,6 +749,10 @@ a:focus{
 	letter-spacing: 0.05em;
 }
 
+#resume-link{
+	padding-top: 30px;
+}
+
 /************************************/
 /***** 09. Testimonial area css *****/
 /************************************/
