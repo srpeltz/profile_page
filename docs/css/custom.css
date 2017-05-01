@@ -756,10 +756,12 @@ a:focus{
 .btn-primary, .btn-primary:active, .btn-primary:visited {
     background-color: #ef476f !important;
 		border-color: #ef476f !important;
+		transition-duration: .75s !important;
+		transition-delay: .1s !important;
 }
 
 .btn-primary:hover {
-	background-color: #d73f63 !important;
+	background-color: #a72342 !important;
 }
 
 /************************************/
@@ -1063,6 +1065,12 @@ fieldset[disabled] .btn{
 	cursor:pointer;
 }
 
+
+/************************************/
+/*****    12. Footer area css   *****/
+/************************************/
+
+
 #email-contact a {
 	color: #fff;
 }
@@ -1071,10 +1079,6 @@ fieldset[disabled] .btn{
 	text-decoration: none;
 	color: #fff;
 }
-
-/************************************/
-/*****    12. Footer area css   *****/
-/************************************/
 
 footer{
 	background: url(../images/footer.jpg) no-repeat bottom center;
@@ -1090,7 +1094,7 @@ footer:after{
     top: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0,0,0,0.87);
+    background: rgb(0,0,0);
 }
 
 footer .container{
