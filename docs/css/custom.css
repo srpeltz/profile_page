@@ -749,8 +749,17 @@ a:focus{
 	letter-spacing: 0.05em;
 }
 
-#resume-link{
+#resume-area{
 	padding-top: 30px;
+}
+
+.btn-primary, .btn-primary:active, .btn-primary:visited {
+    background-color: #ef476f !important;
+		border-color: #ef476f !important;
+}
+
+.btn-primary:hover {
+	background-color: #d73f63 !important;
 }
 
 /************************************/
