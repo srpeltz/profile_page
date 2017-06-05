@@ -24,7 +24,7 @@
 	}
 
 
-	$EmailTo = "srpeltzer@yahoo.com"; // Replace with your email.
+	$EmailTo = "stevenrpeltzer@gmail.com"; // Replace with your email.
 	$Subject = "New Message Received From Contact Form";
 
 	// prepare email body text
