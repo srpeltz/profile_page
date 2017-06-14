@@ -35,7 +35,7 @@
 	/* Typed subtitle */
 	$('.typed-title').typed({
 		stringsElement: $('.typing-title'),
-		backDelay: 4000,
+		backDelay: 8000,
 		typeSpeed: 0,
 		loop: true
 	});
