@@ -78,6 +78,24 @@ a:focus{
     width: 64px;
 }
 
+/* @media (min-width: 992px) {
+	.col-md-3 {
+    width: 27% !important;
+	}
+} */
+
+.flex-style {
+	display: -webkit-box !important;
+	display: -moz-box !important;
+	display: -ms-flexbox !important;
+	display: -webkit-flex !important;
+	display: flex !important;
+	flex-wrap: wrap !important;
+	align-items: center !important;
+	justify-content: center !important;
+	text-align: center !important;
+}
+
 /************************************/
 /***** 02. Navigation area css  *****/
 /************************************/
